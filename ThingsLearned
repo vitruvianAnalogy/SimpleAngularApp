@@ -1,0 +1,33 @@
+1. Filters
+    https://docs.angularjs.org/api/ng/filter
+
+2. Directives
+    ng-app
+    ng-controller
+    ng-repeat - repeats the html inside the tag, for each element in the array (the array in controller)
+    ng-src - compared to src, gets data from the controller
+    ng-click
+
+3. Module - contains the different components of an angularjs app
+    var app = angular.module("myApp",[]);
+
+4. Controller - manages the app's data
+
+app.controller('MainController', ['$scope', function($scope){
+    $scope.title = 'My Own String';
+    $scope.promo = 'My own promo';
+    $scope.product = { 
+        name: 'The Book of Trees', 
+        price: 19,
+        pubdate: new Date('2014','03','08') 
+      };
+  }]);
+
+5. Expression displays value on the page, for e.g. {{product.name}}
+
+6. Assigning function to a scope value. Here index is the index that ng-repeat goes uses for looping. This will only work
+if we are using ng-repeat in a top level element, since ng-repeat goes through array
+
+$scope.plusOne = function(index){
+    $scope.products[index].likes +=1;
+  };

@@ -1,0 +1,7 @@
+1. Create a module in app.js called myApp. 
+2. Use this module in body tag in html by leveraging "ng-app" directive.
+3. Create a controller called MainController
+4. Use ng-controller directive in div tags
+5. Add $scope in MainController and use scope in view
+6. Add other data in $scope. We have added objects.
+7. 
